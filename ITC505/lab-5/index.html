@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Layout with CSS Grid and Flexbox</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="navbar">
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About CSS Grid</a></li>
+                <li><a href="#">About Flexbox</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="content">
+        <section class="hero">
+            <h2>Responsive Layout with CSS Grid and Flexbox</h2>
+            <p>Learn how to create responsive web layouts using modern CSS techniques.</p>
+            <a href="#" class="cta-button">Get Started</a>
+        </section>
+        <section class="info">
+            <div class="info-item">
+                <img src="grid_image.jpeg" width="300" height="300" alt="CSS Grid">
+                <h2>CSS Grid</h2>
+                <p>CSS Grid Layout is a two-dimensional layout system for the web. It allows you to create complex layouts easily.</p>
+            </div>
+            <div class="info-item">
+                <img src="flex_image.png" width="300" height="300" alt="Flexbox">
+                <h2>Flexbox</h2>
+                <p>Flexbox is a one-dimensional layout method for laying out items in rows or columns, providing powerful alignment capabilities.</p>
+            </div>
+            <div class="info-item">
+                <img src="Contact_image.png" width="300" height="300" alt="Contact Us">
+                <h2>Contact Us</h2>
+                <p>Have any questions? Reach out to us and we will be happy to help!</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>Last updated: <span id="lastModified"></span></p>
+    </footer>
+
+    <script type="text/javascript">
+        var x = document.lastModified;
+        document.getElementById('lastModified').textContent = x;
+    </script>
+</body>
+</html>
